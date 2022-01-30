@@ -1,11 +1,12 @@
 //fuck every ddr song
 
-//const { TwitterApi } = require('twitter-api-v2');
-//const twitterClient = new TwitterApi('AAAAAAAAAAAAAAAAAAAAAOWJYgEAAAAAImfXRPtTojprmP3N%2ByM80xxEfrA%3DSWZz8Zj5l3OCx5RXlD76meSrnDz4aSp7HewsC7OqnC5VB2MJpG');
-//const rwClient = twitterClient.readWrite;
+const { TwitterApi } = require('twitter-api-v2');
+const twitterClient = new TwitterApi(process.env.API_KEY_BEARER);
+const rwClient = twitterClient.readWrite;
 //https://github.com/plhery/node-twitter-api-v2/blob/HEAD/doc/examples.md
 
 var fs = require('fs');
+require('dotenv').config();
 
 //function returns a random number
 var randomnumber = function(max) {
@@ -323,28 +324,298 @@ var randomnumber = function(max) {
         "saber wing (akira ishihara headshot mix)",
         "horatio",
         "on the bounce",
-        "trigger"
-
-
+        "trigger",
+        "more more more",
+        "only my railgun",
+        "super eurobeat <gold mix>",
+        "tenshi",
+        "ice ice baby",
+        "bonafied lovin'",
+        "daft punk is playing at my house",
+        "smooooch・∀・",
+        "she is my wife",
+        "Δmax",
+        "vanessa",
+        "ballad the feathers",
+        "leaving...",
+        "max love",
+        "888",
+        "pluto the first",
+        "sakura storm",
+        "dummy",
+        "dirty digital",
+        "冥",
+        "roppongi evolved",
+        "sakura sunrise",
+        "shiny world",
+        "pierce the sky",
+        "new decade",
+        "anti-matter",
+        "possession",
+        "valkyrie dimension",
+        "billiant 2u (akbk mix)",
+        "future gazer",
+        "love & joy",
+        "paranoia (kskst mix)",
+        "trip machine (xac nanoglide mix)",
+        "straight jet",
+        "new beginning",
+        "programmed universe",
+        "revolutionary addict",
+        "tribe",
+        "twinkle♥heart",
+        "crazy♥love",
+        "dreaming can make a wish come true",
+        "ever snow",
+        "haunted rhapsody",
+        "private eye",
+        "until the end",
+        "wicked plastik",
+        "chronos",
+        "diamond dust",
+        "flower",
+        "mermaid girl",
+        "sigsig",
+        "cosmic hurricane",
+        "snow prism",
+        "紅焔",
+        "恋閃繚乱",
+        "nephilim delta",
+        "silver☆dream",
+        "amalgamation",
+        "tokyoevolved",
+        "new york evolved",
+        "london evolved",
+        "tohoku evolved",
+        "paranoia revolution",
+        "bright stream",
+        "across world",
+        "joker",
+        "choo choo train",
+        "mickey mouse march (eurobeat version)",
+        "折れないハート",
+        "ふりそでーしょん",
+        "back in your arms",
+        "beautiful dream",
+        "bombay bomb",
+        "condor",
+        "find the way",
+        "heron",
+        "straight oath",
+        "sucka luva",
+        "wild side",
+        "you",
+        "printemps",
+        "windy fairy",
+        "wow wow venus",
+        "do the evolution",
+        "romancing layer",
+        "somehow you found me",
+        "the reason",
+        "synergy for angels",
+        "gaia",
+        "elemental creation",
+        "お米の美味しい炊き方そしてお米を食べることによるその効果。",
+        "the wind of gold",
+        "magnetic",
+        "prana",
+        "キケンな果実",
+        "chinese snowy dance",
+        "sola",
+        "†渚の小悪魔ラヴリィ～レイディオ†",
+        "hyena",
+        "squeeze",
+        "engraved mark",
+        "vega",
+        "true blue",
+        "恋はどう？モロ◎波動OK☆方程式!!",
+        "轟け！恋のビーンボール！！",
+        "IX",
+        "monkey business",
+        "another phase",
+        "air heroes",
+        "spanish snowy dance",
+        "new generation",
+        "blew my mind",
+        "マーメイド",
+        "川崎純情音頭",
+        "everybody say edogawa",
+        "dong! dong!",
+        "a to z",
+        "lucky-yo!!",
+        "boom! boom! miracle emotion",
+        "my cosmic world",
+        "ラブラブキュートなハピハピサンデー",
+        "バンブーソード・ガール",
+        "ホメ猫☆センセーション",
+        "struggle",
+        "scarlet moon",
+        "bad apple!",
+        "thank you merry christmas",
+        "awake",
+        "siberite",
+        "neko * neko",
+        "poochie",
+        "khamen break",
+        "jomanda",
+        "follow tomorrow",
+        "electronic or treat!",
+        "funky summer beach",
+        "truare!",
+        "believe",
+        "hillbilly shoes",
+        "help me, erinnnnn!!",
+        "wake me up",
+        "time of our lives",
+        "39",
+        "more one night",
+        "ace for aces",
+        "algorithm",
+        "all my heart",
+        "angelic jelly",
+        "astrogazer",
+        "be a hero!",
+        "boss rush",
+        "catch our fire!",
+        "chaos terr-rtech mix",
+        "chocolate philosophy",
+        "come to life",
+        "cosy catastrophe",
+        "cytokinesis",
+        "dancer in the flare",
+        "ddr megamix",
+        "dreaming-ing!!",
+        "electronic dance system music",
+        "emera",
+        "endymion",
+        "far east nightbird",
+        "high school love",
+        "hopeful",
+        "illegal function call",
+        "in between",
+        "ishtar",
+        "lesson by dj",
+        "life is beautiful",
+        "love you more",
+        "max 360",
+        "neutrino",
+        "new century",
+        "prey",
+        "posession (20th anniversary mix)",
+        "reach the sky, without you",
+        "pursuer",
+        "rejoin",
+        "rising fire hawk",
+        "sakura reflection",
+        "shion",
+        "s!ck",
+        "special one",
+        "star trail",
+        "打打打打打打打打打打 ",
+        "yeah! yeah!",
+        "vaniquish the ghost",
+        "恋する☆宇宙戦争っ!!",
+        "adularia",
+        "egoism 440",
+        "alpacore",
+        "avenger",
+        "black jackal",
+        "blstr",
+        "bounce trippy",
+        "cross",
+        "dead heat",
+        "digital luv",
+        "drop the bounce",
+        "f4sh10n",
+        "get on da floor",
+        "give me",
+        "helios",
+        "hunny bunny",
+        "orca",
+        "our soul",
+        "rampage hero",
+        "silly love",
+        "small steps",
+        "splash gold",
+        "starlight in the snow",
+        "toy boxer",
+        "the world ends now",
+        "sweet home party",
+        "voltississimo",
+        "星屑の夜果て ",
+        "最小三倍完全数 ",
+        "crazy hot",
+        "no life queen [dj command remix]",
+        "shiny days",
+        "realize",
+        "hypertwist",
+        "in the past",
+        "hyperdrive",
+        "i want to do this keep",
+        "step machine",
+        "room",
+        "last card",
+        "anti anthem",
+        "bridal festival !!!",
+        "bitter chocolate striker",
+        "we're so happy",
+        "evans",
+        "red cape theorem",
+        "hella deep",
+        "poppin' soda",
+        "sword of vengeance",
+        "high & low",
+        "typhØn",
+        "draw the savage",
+        "muteki buffalo",
+        "going hypersonic",
+        "run the show",
+        "yuni's nocturnal days",
+        "good looking",
+        "step this way",
+        "actualization of self (weaponized)",
+        "come back to me",
+        "better than me",
+        "ddr tagmix -last dancer-",
+        "our love",
+        "hard brain",
+        "last twilight"
       ];
 
       return songlist[randomnumber(songlist.length)]
   }
 
 
-  function generatePost(){
+  async function generatePost(){
     
         //determine song
         var effit = "fuck " + songName();
-        //twitterClient.v1.tweet(effit);
+        //await twitterClient.v2.tweet(effit);
+        //var ok = await twitterClient.v2.tweet("fuck");
+        //console.count(ok);
+        //const tweetsOfJack = await twitterClient.v2.userTimeline('12', { exclude: 'replies' });
+
 
         console.log(effit);
         return effit;
         
     }
 
+function postTweet()
+{
+    try{
+        var yontweet = await twitterClient.v2.tweet("test");
+    } catch (error) {
+        console.error(error);
+    }
 
-  //generatePost();
+}
+
+
+  generatePost();
+
+ // generatePost()
+ //   .then(postTweet);
 
 //debug - run a whole buttload
-setInterval(generatePost, 300);
+//setInterval(generatePost, 300);
