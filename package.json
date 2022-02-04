@@ -11,6 +11,8 @@
   "dependencies": {
     "dotenv": "^14.3.2",
     "express": "^4.17.2",
+    "got": "^12.0.1",
+    "request": "^2.88.2",
     "twit": "^2.2.11",
     "twitter-api-v2": "^1.10.0",
     "twitter-v2": "^1.1.0"

@@ -1,12 +1,14 @@
 //fuck every ddr song
 
-const { TwitterApi } = require('twitter-api-v2');
-const twitterClient = new TwitterApi(process.env.API_KEY_BEARER);
-const rwClient = twitterClient.readWrite;
-//https://github.com/plhery/node-twitter-api-v2/blob/HEAD/doc/examples.md
+var twit = require('twit');
+var config = require('./config.js');
+var fs = require('fs');
+var Twitter = new twit(config);
 
 var fs = require('fs');
 require('dotenv').config();
+
+
 
 //function returns a random number
 var randomnumber = function(max) {
@@ -586,7 +588,7 @@ var randomnumber = function(max) {
   }
 
 
-  async function generatePost(){
+  function generatePost(){
     
         //determine song
         var effit = "fuck " + songName();
@@ -601,21 +603,19 @@ var randomnumber = function(max) {
         
     }
 
-function postTweet()
+function postTweet(post_text)
 {
-    try{
-        var yontweet = await twitterClient.v2.tweet("test");
-    } catch (error) {
-        console.error(error);
-    }
+    // comment this out when testing!
+    Twitter.post('statuses/update', {status: post_text}, function(err, data, response) {
+      console.log(data)
+  })
 
 }
 
 
-  generatePost();
+  
+  postTweet(generatePost());
 
- // generatePost()
- //   .then(postTweet);
 
 //debug - run a whole buttload
 //setInterval(generatePost, 300);
