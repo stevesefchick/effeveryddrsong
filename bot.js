@@ -168,7 +168,7 @@ var randomnumber = function(max) {
         "cow girl",
         "ghosts (vincent de moor remix)",
         "miracle",
-        "with doctor (giant toons version)",
+        "witch doctor (giant toons version)",
         "do you remember me",
         "justify my love",
         "the centre of the heart (stonebridge clubmix)",
@@ -581,7 +581,24 @@ var randomnumber = function(max) {
         "ddr tagmix -last dancer-",
         "our love",
         "hard brain",
-        "last twilight"
+        "last twilight",
+        "WARNINGxWARNINGxWARNING",
+        "megalovania",
+        "anthurium",
+        "dance phenomena",
+        "fleur",
+        "like a star",
+        "pump pump pump",
+        "surface",
+        "wolf's rain",
+        "SAYONARA☆ディスコライト",
+        "↑↑↓↓←→←→ba",
+        "gradius remix（↑↑↓↓←→←→BA Ver.)",
+        "let's dance around!!",
+        "deep tendon reflex",
+        "stay gold",
+        "ddr tagmix -last dancer-"
+    
       ];
 
       return songlist[randomnumber(songlist.length)]
