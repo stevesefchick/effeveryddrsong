@@ -597,8 +597,10 @@ var randomnumber = function(max) {
         "let's dance around!!",
         "deep tendon reflex",
         "stay gold",
-        "ddr tagmix -last dancer-"
-    
+        "ddr tagmix -last dancer-",
+        "beluga",
+        "jet coaster☆girl",
+        "this is my last resort"
       ];
 
       return songlist[randomnumber(songlist.length)]
